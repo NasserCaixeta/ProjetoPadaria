@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pacifico', cursive;
+    background-color: #ffffff; 
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5e0c0;
+    padding: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #f5e0c0;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar img {
+    width: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #9ed296; 
+    padding: 15px 0;
+}
+
+nav button {
+    font-family: 'Pacifico', cursive;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: rgba(76, 175, 80, 0.2); 
+    transform: scale(1.05); 
+}
+
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.images-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-block {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer {
+    font-family: 'Arial', sans-serif;
+    background-color: #c08b6a; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.disclaimer, .footer-info {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+/* Container de imagens */
+.images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+/* Container de imagens */
+.images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+/* Estilo do banner */
+.banner-container {
+    position: relative;
+    width: 100%;
+    margin-top: 40px; 
+    display: block;
+    text-align: center; 
+}
+
+.banner-container img {
+    width: 100%; 
+    height: auto;
+    max-height: 200px; 
+    display: block;
+    margin: 0 auto; 
+    filter: blur(2px); 
+    opacity: 0.9; 
+
+}
+
+/* Centralizando o botão sobre o banner */
+.banner-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner-container .contact-btn {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1; 
+}
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.product-item {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.product-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+.costao-unidade {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    gap: 20px; 
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.costao-unidade img {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.costao-unidade-texto p {
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+}
+.costao-novas-unidades {
+    margin-top: 20px;
+}
+
+.costao-nova-unidade {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.costao-nova-unidade img {
+    width: 300px; 
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px; 
+}
+
+.nova-unidade-descricao {
+    font-size: 18px; 
+    color: black;
+    max-width: 400px; 
+}
+.direita {
+    flex-direction: row-reverse; 
+}
+.direita img {
+    margin-right: 0; 
+    margin-left: 20px; 
+}
